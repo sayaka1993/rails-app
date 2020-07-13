@@ -1,0 +1,23 @@
+<div class="main_user">
+ <div class="container">
+ <div class="form-heading">login</div>
+  <div class="users_form">
+  <div class="form_body">
+  <% if @error_message %>
+  <div class="form-error">
+    <%= @error_message %>
+  </div>
+  <% end %>
+  <%= form_tag("/login") do %>
+   <p>name</p>
+   <input name="name" value="<%= @name %>">
+   <p>password</p>
+   <input type="password" name="password" value="<%= @password %>">
+  <input type="submit" value="login">
+  <% end %>
+    </div>
+   </div>
+  </div>
+  </div>
+
+ 
